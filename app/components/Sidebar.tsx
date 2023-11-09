@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 type SingleLink = {
   url: string;
@@ -27,17 +27,17 @@ const Header = (props: HeaderProps) => (
 );
 
 const gettingStartedLinks = [
-  { name: "Overview", url: "/overview" },
-  { name: "Installation", url: "/installation" },
-  { name: "Example", url: "/example" },
+  { name: 'Overview', url: '/overview' },
+  { name: 'Quick Start', url: '/quickstart' },
+  { name: 'Example', url: '/example' },
 ];
 
 const conceptsLinks = [
-  { name: "Class Extension", url: "/classextension" },
-  { name: "Invalidation", url: "/invalidation" },
-  { name: "Resource Management", url: "/resourcemanagement" },
-  { name: "Persistent Storage", url: "/persistentstorage" },
-  { name: "Queue Management", url: "/queuemanagement" },
+  { name: 'Class Extension', url: '/classextension' },
+  { name: 'Invalidation', url: '/invalidation' },
+  { name: 'Resource Management', url: '/resourcemanagement' },
+  { name: 'Persistent Storage', url: '/persistentstorage' },
+  { name: 'Queue Management', url: '/queuemanagement' },
 ];
 
 const Sidebar = () => {

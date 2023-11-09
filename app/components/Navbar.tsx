@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import Image from "next/image";
+import Link from 'next/link';
+import Image from 'next/image';
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
+} from '@/components/ui/navigation-menu';
 
 const Navbar = () => {
   return (
@@ -25,7 +25,7 @@ const Navbar = () => {
         href="/quickstart"
         className="px-4 py-2 hover:bg-gray-100 rounded-lg mx-2 transition-colors text-lg"
       >
-        Quickstart
+        Quick Start
       </Link>
       <Link
         href="/guides"
