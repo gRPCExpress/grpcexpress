@@ -28,7 +28,7 @@ const Navbar = () => {
         Quick Start
       </Link>
       <Link
-        href="/guides"
+        href="/overview"
         className="px-4 py-2 hover:bg-gray-100 rounded-lg mx-2 transition-colors text-lg"
       >
         Documentations
