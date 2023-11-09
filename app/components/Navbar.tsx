@@ -13,7 +13,7 @@ import {
 const Navbar = () => {
   return (
     <nav className="flex items-center justify-center w-full py-4 mb-2">
-      <Link href="/" className="px-2 py-2 mx-4">
+      <Link href="/" className="hidden md:block px-2 py-2 mx-4">
         <Image
           src="/grpcExpress_Logo.png"
           alt="gRPC Express"

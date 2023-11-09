@@ -1,6 +1,5 @@
 import React from 'react';
-import { H1, H2, H3, P, InlineCode } from '@/app/components/Typography';
-import styles from '@/app/styles';
+import { H1, H2, H3, P } from '@/app/components/Typography';
 import Codeblock from '@/app/components/Codeblock';
 
 const codes = {
