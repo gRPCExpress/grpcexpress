@@ -16,6 +16,11 @@ const client = new Client('http://localhost:8080');
 // Responses are automatically cached
 Const response = await client.myMethod(message)
 `,
+  configuration: `const Client = grpcExpressClient(
+          ServiceClient, 
+          cacheDuration = 60 * 1000, 
+          cacheSize = 1024 * 1024)`,
+
   hookUsage: `const { isLoading, isError, data, error } = useGrpcExpress(client.myMethod, message)`,
 };
 
@@ -35,10 +40,12 @@ const QuickStart = () => {
       </section>
       <section>
         <H2>Initial Configuration</H2>
+        <P>No additional configuration is needed to start using the library.</P>
         <P>
-          No additional configuration is needed to start using the library. Once
-          installed, you can start leveraging its caching capabilities.
+          You can optionally set the default cache expiration time in ms and the
+          in-memory cache size in bytes.
         </P>
+        <Codeblock language="javascript" value={codes.configuration} />
       </section>
       <section>
         <H2>Default Settings</H2>
