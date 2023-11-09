@@ -1,6 +1,7 @@
+import './globals.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import './globals.css';
+import { Button } from '@/components/ui/button';
 
 import Codeblock from './components/Codeblock';
 import VideoPlayer from './components/VideoPlayer';
@@ -16,11 +17,18 @@ export default function Home() {
           An open-source caching library for grpc-web
         </h2>
       </div>
+      <div>
+        <Link href="/quickstart">
+          <Button className="my-8" size="lg">
+            Get started
+          </Button>
+        </Link>
+      </div>
       <VideoPlayer
         url="/basic_usage_web.mp4"
         height={480}
         width={840}
-        className="my-12"
+        className="my-4"
       />
     </main>
   );
