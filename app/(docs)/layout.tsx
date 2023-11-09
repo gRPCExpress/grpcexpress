@@ -1,17 +1,31 @@
-import Sidebar from '../components/Sidebar'
+import Sidebar from '../components/Sidebar';
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from '@/components/ui/popover';
 
-
-export default function Layout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <>
-        <div className='grid grid-cols-5'>
-        <div className='col-span-1'><Sidebar /></div>
-        <div className='col-span-4 p-3'>{children}</div>
+    <main className="w-full md:w-10/12 lg:w-8/12 mx-auto">
+      <div className="grid grid-cols-12 gap-2 mx-4">
+        <div className="md:hidden col-span-12 mb-4">
+          <Popover>
+            <PopoverTrigger>
+              <span className="text-lg font-medium border rounded-md px-6 py-2">
+                Sidebar
+              </span>
+            </PopoverTrigger>
+            <PopoverContent>
+              <Sidebar />
+            </PopoverContent>
+          </Popover>
         </div>
-    </>
-  )
+        <div className="hidden md:block md:col-span-3">
+          <Sidebar />
+        </div>
+        <div className="col-span-12 md:col-span-9">{children}</div>
+      </div>
+    </main>
+  );
 }
