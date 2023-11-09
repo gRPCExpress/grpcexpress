@@ -1,34 +1,22 @@
 import React from 'react'
+import { H1, P} from '@/app/components/Typography';
+import Codeblock from '@/app/components/Codeblock';
 
 const Example = () => {
   return (
-    <div>
-      <h3 className='font-bold text-md'>Example</h3>
-      <p>Try out the example!</p>
-      <ol className="list-decimal">
-          <li>
-            Start envoy via docker
-            <br></br>
-            cd example/envoy
-            <br></br>
-            Docker compose up
-          </li>
-          <li>
-            Start the server
-            <br></br>
-            Cd example/server
-            <br></br>
-            Npm run dev
-          </li>
-          <li>
-            Start the front end
-            <br></br>
-            Cd example/frontend
-            <br></br>
-            Npm run dev
-          </li>
-      </ol>
-    </div>
+      <main>
+        <H1>Example</H1>
+        <P>
+          <ol className='list-decimal'>
+            <li>Start envoy via docker</li>
+            <Codeblock language='javascript' value={'cd example/envoy'+'\n'+'docker compose up'}/>
+            <li>Start the server</li>
+            <Codeblock language='javascript' value={'cd example/server'+'\n'+'npm run dev'}/>
+            <li>Start the front end</li>
+            <Codeblock language='javascript' value={'cd example/frontend'+'\n'+'npm run dev'}/>
+          </ol>
+        </P>
+      </main>
   )
 }
 

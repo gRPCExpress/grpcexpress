@@ -6,7 +6,7 @@ type Props = {
 
 export const H1: React.FC<Props> = ({ children }) => {
   return (
-    <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl font-serif">
+    <h1 className="scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-4xl font-serif">
       {children}
     </h1>
   );
@@ -14,7 +14,7 @@ export const H1: React.FC<Props> = ({ children }) => {
 
 export const H2: React.FC<Props> = ({ children }) => {
   return (
-    <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight mt-8">
+    <h2 className="scroll-m-20 border-b pb-2 text-xl font-semibold tracking-tight mt-8">
       {children}
     </h2>
   );
