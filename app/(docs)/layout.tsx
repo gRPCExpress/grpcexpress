@@ -24,7 +24,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="hidden md:block md:col-span-3">
           <Sidebar />
         </div>
-        <div className="col-span-12 md:col-span-9">{children}</div>
+        <div
+          className="col-span-12 md:col-span-9 overflow-y-auto scrollbar-hide pb-1/3-screen"
+          style={{ height: 'calc(100vh - 4rem)' }}
+        >
+          {children}
+        </div>
       </div>
     </main>
   );
