@@ -74,3 +74,17 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* This will hide the scrollbar */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera*/
+}
+
+/* This utility class will allow for an extra 1/3 screen of scrolling when there is no content */
+.pb-1\/3-screen {
+  padding-bottom: 33vh;
+}
