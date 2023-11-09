@@ -28,6 +28,14 @@ export const H3: React.FC<Props> = ({ children }) => {
   );
 };
 
+export const H4: React.FC<Props> = ({ children }) => {
+  return (
+    <h4 className="scroll-m-20 text-xl font-semibold tracking-tight mt-6">
+      {children}
+    </h4>
+  );
+};
+
 export const P: React.FC<Props> = ({ children }) => {
   return <p className="leading-7 [&:not(:first-child)]:mt-2">{children}</p>;
 };
