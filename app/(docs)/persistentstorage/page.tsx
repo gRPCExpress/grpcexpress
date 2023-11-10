@@ -5,7 +5,11 @@ const persistentStorage = () => {
   return (
     <main>
       <H1>Persistent Caching</H1>
-      <P>{`Your cache doesn't vanish after a session ends. gRPCExpress ensures that the cache is saved to localStorage once the session concludes. Moreover, when a new session starts, the cache is restored from localStorage, ensuring continuity and faster response times right from the start.`}</P>
+      <P>We wanted the cached responses from requested method calls to persist across sessions - storing the data in localStorage became an apparent choice. Data stored in localStorage will persist even as the user navigates away from the page or closes the browser.
+        Loading the cached data from localStorage will allow for faster execution and a more seamless experience for the user making the requests.
+      </P>
+      <P>{`The user's cache does not vanish after a session wraps or browser closes. gRPCExpress library ensures that the cache is saved to localStorage once session concludes
+      and restored the cache from localStorage when a new session starts.`}</P>
     </main>
   )
 }

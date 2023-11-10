@@ -34,8 +34,8 @@ const gettingStartedLinks = [
 
 const conceptsLinks = [
   { name: 'Class Extension', url: '/classextension' },
-  { name: 'Invalidation', url: '/invalidation' },
-  { name: 'Resource Management', url: '/resourcemanagement' },
+  { name: 'Storage & Invalidation', url: '/invalidation' },
+  // { name: 'Resource Management', url: '/resourcemanagement' },
   { name: 'Persistent Storage', url: '/persistentstorage' },
   { name: 'Queue Management', url: '/queuemanagement' },
 ];
