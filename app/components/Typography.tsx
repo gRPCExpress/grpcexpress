@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 type Props = {
   children: React.ReactNode;
@@ -25,6 +25,14 @@ export const H3: React.FC<Props> = ({ children }) => {
     <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
       {children}
     </h3>
+  );
+};
+
+export const H4: React.FC<Props> = ({ children }) => {
+  return (
+    <h4 className="scroll-m-20 text-xl font-semibold tracking-tight mt-6">
+      {children}
+    </h4>
   );
 };
 
