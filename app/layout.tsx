@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "gRPC Express",
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className="mx-auto bg-slate-50">
         <Navbar />
         {children}
+        <Footer/>
       </body>
     </html>
   );
